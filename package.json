@@ -1,0 +1,34 @@
+{
+  "name": "rbmbase",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [],
+  
+    "homepage": "https://github.com/FritzH321/rbmbase",
+    "bugs": "https://github.com/FritzH321/rbmbase/issues",
+    "author": {
+      "name": "Fritz",
+      "email": "",
+      "url": "https://github.com/FritzH321"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/FritzH321/rbmbase.git"
+    },
+  
+  "dependencies": {},
+  "devDependencies": {
+    "matchdep": "~0.1.2",
+    "grunt": "~0.4.1",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-concat": "~0.1.3",
+    "grunt-contrib-jshint": "~0.4.3",
+    "grunt-contrib-clean": "~0.4.1",
+    "grunt-contrib-rename": "0.0.3",
+    "grunt-contrib-compress": "~0.5.3",
+    "grunt-node-webkit-builder": "latest"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  }
+}

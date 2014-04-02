@@ -1,0 +1,18 @@
+{
+  "name": "RBM NWA-Base",
+  "main": "./views/index.html",
+  "version": "0.0.1",
+  "single-instance": true,
+  "window": {
+    "title": "RBMBase",
+    "icon": "img/icon.png",
+    "toolbar": false,
+    "frame": false,
+    "width": 962,
+    "height": 600,
+    "min_width": 962,
+    "min_height": 600,
+    "resizable": true
+  },
+  "chromium-args": "--child-clean-exit"
+}
