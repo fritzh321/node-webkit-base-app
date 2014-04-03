@@ -9,17 +9,20 @@
 	<body>
 	  <header id="header"></header>
 
-   <script id="header-tpl" type="text/x-template">
-    
+    <script id="header-tpl" type="text/x-template">
+        <nav class="btn-set <%= process.platform %>">
 
-        <nav class="btn-set fs-win">
+          <% _.each(buttons, function(button) { %>
+            <button class="btn-os <%= button %>"></button>
+          <% }); %>
+        </nav>
+
+        <nav class="btn-set fs-<%= process.platform %>">
           <button class="btn-os fullscreen"></button>
         </nav>
-        <h1>Popcorn Time</h1>
+        <h1>RedBeaver Media - Node webkit app</h1>
     </script>
-
-    <p>sdmlkfj</p>
-
+    <div style="margin-top:200px;color:#fff">FUUUUUUUUUUUUUUUUUUUU</div>
     <!-- Basic Dependencies -->
     <script src="js/vendor/jquery-2.1.0.min.js"></script>
     <script src="js/vendor/underscore-min.js"></script>

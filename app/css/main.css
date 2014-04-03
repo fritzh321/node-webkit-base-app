@@ -54,3 +54,207 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
+
+body {
+  -webkit-user-select: none;
+}
+
+button {
+  -webkit-app-region: no-drag;
+}
+#header {
+  -webkit-user-select: none;
+  -webkit-app-region: drag;
+}
+/* Global elements */
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+body {
+  background: #181817;
+  border-radius: 5px;
+  cursor: default;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: white;
+}
+
+::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: normal;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+:focus {
+  outline: 0;
+}
+
+a {
+  text-decoration: none;
+}
+.btn {
+  -webkit-transition: background-color ease;
+  -webkit-transition-delay: 0.3s;
+  -moz-transition: background-color ease 0.3s;
+  -o-transition: background-color ease 0.3s;
+  transition: background-color ease 0.3s;
+  color: #999999;
+  display: inline-block;
+  border-radius: 3px;
+  font-size: 13px;
+  line-height: 18px;
+  padding: 7px 12px;
+  background: #286dc4;
+  cursor: pointer;
+  background-image: linear-gradient(to bottom, #3076ce 0%, #175ab0 100%);
+  color: #FFF;
+  font-weight: bold;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.btn-action {
+  background: #bb2720;
+  border: 0;
+  border-radius: 5px;
+  color: #FFF;
+  display: block;
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 10px;
+  padding: 12px 0;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  width: 155px;
+}
+
+/*
+-- App */
+#header {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  height: 45px;
+  left: 0;
+  padding: 15px;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  width: 100%;
+  background-color:#222326;
+}
+#header h1 {
+  font-size: 13px;
+}
+#header .btn-set {
+  position: absolute;
+  left: 15px;
+  top: 17px;
+}
+#header .btn-set.right {
+  right: 7px;
+  left: initial;
+  top: 5px;
+}
+#header .btn-set.darwin {
+  position: absolute;
+  left: 15px;
+  top: 17px;
+}
+#header .btn-set.fs-darwin {
+  right: 7px;
+  left: initial;
+  top: 5px;
+}
+#header .btn-set.linux {
+  right: 7px;
+  left: initial;
+  top: 15px;
+}
+#header .btn-set.fs-linux {
+  position: absolute;
+  left: 15px;
+  top: 5px;
+}
+#header .btn-set.win32 {
+  right: 7px;
+  left: initial;
+  top: 15px;
+}
+#header .btn-set.fs-win32 {
+  position: absolute;
+  left: 15px;
+  top: 5px;
+}
+#header .btn-set:hover .btn-os {
+  color: rgba(0, 0, 0, 0.8);
+}
+#header .btn-set button {
+  display: block;
+  float: left;
+  margin: 0 6px 0 0;
+  background: #000;
+}
+#header .btn-set button.btn-os {
+  border-radius: 30px;
+  border: 0;
+  color: transparent;
+  display: inline-block;
+  font-size: 10px;
+  height: 12px;
+  padding: 0;
+  text-align: center;
+  width: 12px;
+}
+#header .btn-set button.debug {
+  background: #fff;
+  content: 'D';
+  color: #000;
+  line-height: 9px;
+  padding: 0 5px;
+  text-transform: uppercase;
+  width: auto;
+}
+#header .btn-set button.close:hover {
+  background: #e74c3c;
+}
+#header .btn-set button.max:hover {
+  background: #27ae60;
+}
+#header .btn-set button.min:hover {
+  background: #f1c40f;
+}
+#header .btn-set button.fullscreen {
+  color: #000;
+  background: transparent;
+  margin: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 0;
+  display: block;
+}
+#header .btn-set button.fullscreen::before {
+  content: "\f085";
+  font-family: 'FontAwesome';
+  font-size: 1.85em;
+  line-height: 0.2em;
+  background: none;
+  display: block;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+#header .btn-set button.fullscreen.active::before {
+  content: "\f085";
+}
+#header .btn-set button.fullscreen:hover {
+  color: rgba(0, 0, 0, 0.1);
+}

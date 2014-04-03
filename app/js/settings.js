@@ -6,7 +6,6 @@ Settings = {
 	 "_defaultSettings": {
         // Default to first version
         "version": "0.1.0",
-        "dbVersion": "1.0",
         // Used to check if there's an internet connection
         "connectionCheckUrl": "http://www.google.com"
     },
