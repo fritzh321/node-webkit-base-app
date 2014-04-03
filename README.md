@@ -11,7 +11,7 @@ You will need nodejs and grunt:
     
 ## Running
 
-Run at least once to install dependencies in the app folder.
+Run at least once to install dependencies in the app & root folder.
 ```
   $ npm install
 ```
