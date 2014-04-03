@@ -3,6 +3,12 @@ Node Webkit Desktop App - Template
 
 A base project for a node webkit app, build with grunt-node-webkit-builder
 
+Included libaries
+- Backbone
+- jQuery
+- Underscore
+- Marionette
+
 ## Dependencies
 
 You will need nodejs and grunt:
