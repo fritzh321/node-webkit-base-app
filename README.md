@@ -9,7 +9,7 @@ You will need nodejs and grunt:
 
     $ npm install -g grunt-cli
     
-## Running
+## Running & Debugging
 
 Run at least once to install dependencies in the app & root folder.
 ```
@@ -19,6 +19,12 @@ Run node-webkit from the app directory
 ```
 $ nw . 
 ```
+Debug node-webkit from the app directory  
+```
+$ nw . --debug
+```
+Mac: FN + F13 (Devconsole), FN+14 (Refresh)
+
 ## Build
 
 Build with:
