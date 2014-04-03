@@ -1,4 +1,4 @@
-Node webkit - Template App
+Node Webkit Desktop App - Template
 ====================
 
 A base project for a node webkit app, build with grunt-node-webkit-builder
