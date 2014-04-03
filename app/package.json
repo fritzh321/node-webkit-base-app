@@ -1,18 +1,36 @@
 {
-  "name": "RBM Webkit Base",
-  "main": "./views/index.html",
+  "name": "RBM-Webkit-Base",
+  "main": "index.html",
   "version": "0.0.1",
   "single-instance": true,
   "window": {
     "title": "RBMBase",
     "icon": "img/icon.png",
-    "toolbar": false,
-    "frame": false,
+    "toolbar": true,
+    "frame": true,
     "width": 962,
     "height": 600,
     "min_width": 962,
     "min_height": 600,
     "resizable": true
+  },
+ "dependencies": {
+    "node-uuid": "1.4.1",
+    "adm-zip": "0.4.4",
+    "jschardet": "1.1.0",
+    "iconv-lite": "0.2.11",
+    "i18n": "0.4.1",
+    "xmlrpc": "1.2.0",
+    "request": "2.34.0",
+    "peerflix": "0.1.6",
+    "cheerio": "0.13.1",
+    "express": "3.4.8",
+    "socket.io": "0.9.16",
+    "URIjs": "1.12.1",
+    "async": "0.2.x",
+    "underscore": "1.6.x",
+    "q": "2.0.x",
+    "rimraf": "^2.2.6"
   },
   "chromium-args": "--child-clean-exit"
 }
