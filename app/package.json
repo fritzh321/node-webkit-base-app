@@ -1,5 +1,5 @@
 {
-  "name": "RBM NWA-Base",
+  "name": "RBM Webkit Base",
   "main": "./views/index.html",
   "version": "0.0.1",
   "single-instance": true,
