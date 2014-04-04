@@ -7,10 +7,10 @@ body {
 }
 
 body {
-  background: lighten($header-color, 60%);
+  background: lighten($maincolor, 60%);
   border-radius: 5px;
   cursor: default;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   color: $text-color;
 }
@@ -76,7 +76,7 @@ a { text-decoration: none; }
 // Header bar
 #header {
   @include box-sizing(border-box);
-  border-bottom: 1px solid darken($header-color, 10%);
+  border-bottom: 1px solid darken($header-color, 20%);
   height: $header_height;
   left: 0;
   padding: 15px;
@@ -85,6 +85,7 @@ a { text-decoration: none; }
   text-align: center;
   width: 100%;
   background-image: linear-gradient(to top,  $header-color, lighten($header-color, 5%));
+  color:darken($header-color, 60%);
 
   h1 {
     font-size: 13px;
@@ -142,7 +143,7 @@ a { text-decoration: none; }
       display: block;
       float: left;
       margin: 0 6px 0 0;
-      background: lighten($header-color, 15%);
+      background: darken($header-color, 25%);
 
       &.btn-os {
         border-radius: 30px;
@@ -156,32 +157,21 @@ a { text-decoration: none; }
         width: 12px;
       }
 
-
-      &.debug {
-        background: #fff;
-        content: 'D';
-        color: #000;
-        line-height: 9px;
-        padding: 0 5px;
-        text-transform: uppercase;
-        width: auto;
-      }
-
       &.close:hover { background: #e74c3c; }
       &.max:hover { background: #27ae60; }
       &.min:hover { background: #f1c40f; }
-      &.fullscreen { color:#000; background:transparent; margin:0; width:32px;height:32px; border-radius:0; display:block;}
+      &.fullscreen { color:darken($header-color, 30%); background:transparent; margin:0; width:32px;height:32px; border-radius:0; display:block;}
       &.fullscreen::before {
-          content: "\e000";
-          font-family: VideoJS;
-          font-size: 1.85em;
+          content: "\f065";
+          font-family: FontAwesome;
+          font-size: 1.5em;
           line-height: 0.2em;
           background: none;
           display:block;
           text-shadow: 0 1px 0 rgba(255,255,255,0.1)
       }
       &.fullscreen.active::before {
-          content: "\e00B";
+          content: "\f065";
       }
       &.fullscreen:hover{color:#b2b2b2;}
     }
@@ -292,79 +282,73 @@ a { text-decoration: none; }
 }
 
 // Catalog select
-#catalog-select {
+#side-menu {
   @include box-sizing(border-box);
   @include scrollable();
-  width: 180px;
+  width: 220px;
   position: absolute;
   top: $header_height;
-  padding: 20px;
+  padding: 0px;
   height: calc(100% - #{$header_height});
-  background: #121212;
-  border-right: 1px solid #000;
-  font-family: 'Myriad Pro', 'Lucida Grande', sans-serif;
+  background: $side-menu;
+  border-right: 1px solid darken($side-menu, 50%);
+  font-family: 'Open Sans', 'Lucida Grande', sans-serif;
 
   h4 {
-    margin-top: 40px;
-    color: #404040;
-    font-weight: bold;
+    color: lighten($side-menu, 50%);
+    font-weight:600;
     margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding:20px 20px 0px 20px;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+
   }
 
   ul {
     li {
       display: block;
-      font-weight: bold;
+      font-weight: 300;
       font-size: 13px;
+      margin-bottom: 5px;
 
       a {
         @include transition(background-color ease .3s);
-        color: #999999;
+        color: lighten($header-color, 50%);
         display: block;
-        border-radius: 3px;
-        padding: 8px;
+        padding: 8px 10px 8px 20px;
+        &:hover { 
+          background: $popcorn-blue;
+          i {
+            color: lighten($side-menu, 50%);
+          }
+        }
 
-        &:hover { background: #010101; }
+        i {
+          padding-right:15px;
+          color:darken($header-color, 50%);
+
+        }
+
       }
 
       &.active {
         a,
         a:hover {
           background: $popcorn-blue;
-          background-image: linear-gradient(to bottom, #3076ce 0%, #175ab0 100%);
           color: #FFF;
-          font-weight: bold;
+          font-weight: 600;
           text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
           cursor: default;
+          i {
+            color:#fff;
+          }
         }
       }
     }
   }
 
-  .search {
-    position: absolute;
-    right: 20px;
-    top: 12px;
 
-    input {
-      border: 2px solid rgba(255, 255, 255, 0.4);
-      border-radius: 5px;
-      color: #FFF;
-      font-size: 12px;
-      height: 15px;
-      padding: 8px 10px;
-      width: 115px;
-      background: transparent;
-      font-weight: bold;
-    }
-
-    i {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      color: rgba(255, 255, 255, 0.4);
-    }
-  }
 }
 
 
