@@ -1,7 +1,7 @@
 Node Webkit Desktop App - Template
 ====================
 
-![Screenshot](http://s29.postimg.org/zg0aj9ufb/Schermafbeelding_2014_04_04_om_14_55_22.png)
+![Screenshot](http://s28.postimg.org/va2x7hua5/Schermafbeelding_2014_04_04_om_14_58_32.png)
 
 A base project for a node webkit app, build with grunt-node-webkit-builder
 
