@@ -31,6 +31,11 @@ $ nw . --debug
 ```
 Mac: FN + F13 (Devconsole), FN+14 (Refresh)
 
+Run compass in Terminal for CSS compiling and listen to future changes.
+```
+$ compass watch --css-dir css
+```
+
 ## Build
 
 Build with:
