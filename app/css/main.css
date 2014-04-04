@@ -1,4 +1,6 @@
 @import url(../css/font-awesome.min.css);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -78,7 +80,7 @@ body {
   background: #181817;
   border-radius: 5px;
   cursor: default;
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   color: white;
 }
@@ -125,7 +127,7 @@ a {
   border-radius: 5px;
   color: #FFF;
   display: block;
-  font-family: Helvetica, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 700;
   margin-top: 10px;
